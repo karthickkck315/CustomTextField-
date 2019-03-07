@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HAH-re-zGA">
+                                <rect key="frame" x="16" y="108" width="343" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="v58-3q-Cgy"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CWd-5T-wWE">
+                                <rect key="frame" x="16" y="160" width="343" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Afb-Ep-5Mc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="imC-zS-pSB">
+                                <rect key="frame" x="16" y="210" width="343" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cCA-Zc-TMW"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cvS-6P-4g2">
+                                <rect key="frame" x="16" y="263" width="343" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="q5q-yM-bOl"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41960784309999999" green="0.71372549019999998" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="imC-zS-pSB" firstAttribute="leading" secondItem="cvS-6P-4g2" secondAttribute="leading" id="0XT-T8-D1S"/>
+                            <constraint firstItem="imC-zS-pSB" firstAttribute="trailing" secondItem="cvS-6P-4g2" secondAttribute="trailing" id="4f0-dZ-12p"/>
+                            <constraint firstItem="imC-zS-pSB" firstAttribute="top" secondItem="CWd-5T-wWE" secondAttribute="bottom" constant="6" id="9Ow-uC-8wQ"/>
+                            <constraint firstItem="CWd-5T-wWE" firstAttribute="height" secondItem="HAH-re-zGA" secondAttribute="height" id="Cp1-r7-btA"/>
+                            <constraint firstItem="HAH-re-zGA" firstAttribute="trailing" secondItem="CWd-5T-wWE" secondAttribute="trailing" id="K8J-tu-aeU"/>
+                            <constraint firstItem="cvS-6P-4g2" firstAttribute="height" secondItem="imC-zS-pSB" secondAttribute="height" id="KSl-6i-NIi"/>
+                            <constraint firstItem="HAH-re-zGA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="T8X-gQ-BDK"/>
+                            <constraint firstItem="cvS-6P-4g2" firstAttribute="top" secondItem="imC-zS-pSB" secondAttribute="bottom" constant="9" id="TEb-dN-dEU"/>
+                            <constraint firstItem="CWd-5T-wWE" firstAttribute="leading" secondItem="imC-zS-pSB" secondAttribute="leading" id="Xhn-Ox-3qM"/>
+                            <constraint firstItem="CWd-5T-wWE" firstAttribute="top" secondItem="HAH-re-zGA" secondAttribute="bottom" constant="8" symbolic="YES" id="bds-zz-uGV"/>
+                            <constraint firstItem="HAH-re-zGA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="p9k-89-5iX"/>
+                            <constraint firstItem="HAH-re-zGA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tke-AD-fsf"/>
+                            <constraint firstItem="HAH-re-zGA" firstAttribute="leading" secondItem="CWd-5T-wWE" secondAttribute="leading" id="xeu-Sf-5mv"/>
+                            <constraint firstItem="imC-zS-pSB" firstAttribute="height" secondItem="CWd-5T-wWE" secondAttribute="height" id="ycS-Jq-a9Z"/>
+                            <constraint firstItem="CWd-5T-wWE" firstAttribute="trailing" secondItem="imC-zS-pSB" secondAttribute="trailing" id="zGP-N8-m4E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstTextField" destination="HAH-re-zGA" id="HxN-ak-24O"/>
+                        <outlet property="fourthTextField" destination="cvS-6P-4g2" id="pcN-Z5-7UB"/>
+                        <outlet property="secondTextField" destination="CWd-5T-wWE" id="m6n-sp-niw"/>
+                        <outlet property="thirdextField" destination="imC-zS-pSB" id="YJ1-lX-xnG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
